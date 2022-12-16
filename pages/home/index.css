@@ -1,1 +1,244 @@
-/* Desenvolva sua estilização aqui... */
+body{
+    line-height: 2em;
+}
+
+nav{
+    width: 100vw;
+    background-image: url(/assets/img/img-header.svg);
+    background-size: cover;
+    
+    justify-content: center;
+
+}
+
+.opac{
+    width: 100%;
+    height: 100%;
+    
+    padding: 10em 6.25em;
+
+    background: rgba(0,0,0,0.7);
+}
+
+.logo{
+    margin-bottom:3.75em;
+}
+
+.opac > h1{
+    font-size: var(--title-1);
+    color: var(--color-grey-3);
+    line-height: 150%;
+    margin-bottom: 2em;
+}
+
+.opac > p{
+    color: var(--color-grey-5);
+    font-size: var(--text-1);
+    
+}
+
+.text-detalhe{
+    margin-bottom: 4.5em;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+.opac > a{
+    font-size: var(--text-2);
+    color: var(--color-grey-6);
+
+    background-color: var(--color-brand-1);
+    padding: 0.75em 3.125em;
+
+    border: 2px solid var(--color-brand-1);
+    text-align: center;
+
+    border-radius: 0.5em;
+
+    text-decoration: none;
+}
+
+main{
+    background-color: var(--color-grey-5);
+    width: 100vw;
+    padding: 2.5em 0 2.5em 0;
+}
+
+.vagas > h2{
+    margin-bottom: 2.75em;
+}
+
+.lista_vagas{
+    
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.lista_vagas > li{
+    background-color: var(--color-grey-6);
+    padding: 2.375em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lista_vagas > li > h3{
+    margin-bottom: 1.125em;
+    font-size: var(--title-4);
+    font-weight: 600;
+}
+
+.lista_vagas > li > div{
+    font-size: var(--text-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+} 
+
+.lista_vagas > li > p{
+    font-size: 1em;
+    margin: 1.75em 0;
+}
+
+.modalities > span{
+    padding: 0.25em 0.75em;
+    background-color: var(--color-grey-3);
+    border-radius: 0.5em;
+}
+
+.lista_vagas > li > button{
+    width: 100%;
+    max-width: 35em;
+    height: 2.375em;
+    text-align: center;
+
+    color: var(--color-grey-6);
+    background-color: var(--color-brand-1);
+    font-size: var(--text-2);
+    font-weight: 500;
+
+    border: 2px solid var(--color-brand-1);
+    border-radius: 0.5em;
+
+    margin-top: 3em;
+    align-self: center;
+
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+}
+
+.lista_vagas > li > button:hover{
+    background-color: var(--color-brand-2);
+}
+
+.vagas_selecionadas{
+    
+    margin-top: 2.25em;
+    background-color: var(--color-grey-6);
+    height: 20em;
+}
+
+.lista__vagas_selecionadas::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  .lista__vagas_selecionadas::-webkit-scrollbar-track {
+    background: var(--color-grey-3)        
+  }
+  
+ .lista__vagas_selecionadas::-webkit-scrollbar-thumb {
+    background-color: var(--color-brand-1);    
+    border-radius: 20px;       
+    border: 3px solid var(--color-brand-1);  
+  }
+
+.vagas_selecionadas > h2{
+    padding: 2em 0 2em 2em;
+}
+.text__vagas--selecionadas{
+    color: var(--color-grey-2);
+    margin: 4.625em 0 0 2em;
+}
+
+@media(max-width: 525px){
+    .opac > a{
+        font-size: 0.6em;
+        padding: 0.5em 2em;
+    }
+}
+
+@media(min-width: 991px){
+    .container{
+        display: flex;
+        gap: 4.875em;
+    }
+    .vagas{
+        width: 65%;
+    }
+    .vagas_selecionadas{
+        width: 40%;
+        margin-top: 6em;
+        
+    }
+    .lista_vagas > li{
+        position: relative;
+    }
+    .lista_vagas > li > button{
+        position: absolute;
+        width: 14em;
+
+        right: 2.375em;
+        bottom: 2.4em;
+    }
+}
+
+.lista__vagas_selecionadas{
+    background-color: var(--color-grey-6);
+    max-height: 400px;
+
+    overflow-y: scroll;
+}
+
+.lista__vagas_selecionadas > li:hover{
+    background-color: var(--color-grey-4);
+}
+.lista__vagas_selecionadas > li{
+    padding: 2em 1.75em 2em 2em;
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.25em;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enterprise-location{
+    display: flex;
+    gap: 2em;
+}
+
+.button__fav-remove{
+    margin-top: 1em;
+}
+
+.button__fav-remove::before{
+    cursor: pointer;
+    padding: 12px 16px;
+    border:  2px solid var(--color-grey-5);
+    border-radius: 8px;
+    background-color: var(--color-grey-5);
+}
+
+.button__fav-remove:hover::before{
+    background-color: var(--color-grey-3);
+    border:  2px solid var(--color-grey-3);
+}
