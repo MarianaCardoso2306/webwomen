@@ -4,11 +4,8 @@ body{
 
 .nav{
     width: 100vw;
-    background-image: url(".../assets/img/header-img.jpg");
+    background-image: url("../../assets/img/headerimg.jpg");
     background-size: cover;
-    
-    justify-content: center;
-
 }
 
 .opac{
