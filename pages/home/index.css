@@ -1,10 +1,12 @@
+@charset "UTF-8";
+
 body{
     line-height: 2em;
 }
 
 nav{
     width: 100vw;
-    background-image: url("/assets/img/header-img-jpg.jpg");
+    background-image: url("../assets/img/header-img-jpg.jpg");
     background-size: cover;
     
     justify-content: center;
