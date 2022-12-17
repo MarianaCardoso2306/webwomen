@@ -6,7 +6,7 @@ body{
 
 nav{
     width: 100vw;
-    background-image: url("../assets/img/header-img-jpg.jpg");
+    background-image: url("/pages/home/header-img.jpg");
     background-size: cover;
     
     justify-content: center;
