@@ -12,7 +12,7 @@ body{
     width: 100%;
     height: 100%;
     
-    padding: 10em 6.25em;
+    padding: 6.25em 1em 8em 1em;
 
     background: rgba(0,0,0,0.7);
 }
@@ -163,12 +163,15 @@ main{
 
 @media(max-width: 525px){
     .opac > a{
-        font-size: 0.6em;
-        padding: 0.5em 2em;
+        width: 100%;
+        padding: 0.5em 1em;
     }
 }
 
 @media(min-width: 991px){
+    .opac{
+        padding: 10em 6.25em;
+    }
     .container{
         display: flex;
         gap: 4.875em;
@@ -191,13 +194,15 @@ main{
         right: 2.375em;
         bottom: 2.4em;
     }
+    .lista__vagas_selecionadas{
+        max-height: 400px;
+    
+        overflow-y: scroll;
+    }
 }
 
 .lista__vagas_selecionadas{
     background-color: var(--color-grey-6);
-    max-height: 400px;
-
-    overflow-y: scroll;
 }
 
 .lista__vagas_selecionadas > li:hover{
