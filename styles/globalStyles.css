@@ -52,4 +52,9 @@ body {
     --title-3: calc(2rem / 1.2);
     --text-1:  calc(1.125rem / 1.2);
   }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
 }
